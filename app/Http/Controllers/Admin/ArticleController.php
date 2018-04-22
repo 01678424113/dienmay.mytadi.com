@@ -342,6 +342,7 @@ class ArticleController extends Controller {
     }
 
     public function listCategory() {
+
         $response = [
             'title' => "Chuyên mục tin tức"
         ];

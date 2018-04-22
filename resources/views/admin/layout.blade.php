@@ -90,6 +90,32 @@
                                     <span class="selected"></span>
                                 </a>
                             </li>
+                            {{-- Tin tức--}}
+                            <li class="nav-item {{ Request::is('admin/article*') ? 'active' : '' }}">
+                                <a role="button" class="nav-link nav-toggle">
+                                    <i class="fa fa-rss"></i>
+                                    <span class="title">Tin tức</span>
+                                    <span class="selected"></span>
+                                    <span class="arrow {{ Request::is('admin/article*') ? 'active open' : '' }}"></span>
+                                </a>
+                                <ul class="sub-menu">
+                                    <li class="nav-item {{ Request::is('admin/article/add') ? 'active' : '' }}">
+                                        <a href="{{URL::action('Admin\ArticleController@addArticle')}}" class="nav-link">
+                                            <span class="title">Thêm tin tức</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item {{ Request::is('admin/article') ? 'active' : '' }}">
+                                        <a href="{{URL::action('Admin\ArticleController@listArticle')}}" class="nav-link">
+                                            <span class="title">Tất cả tin tức</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item {{ Request::is('admin/article/category*') ? 'active' : '' }}">
+                                        <a href="{{URL::action('Admin\ArticleController@listCategory')}}" class="nav-link">
+                                            <span class="title">Chuyên mục tin tức</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
                             {{-- Phân quyền--}}
                             <li class="nav-item {{ Request::is('admin/permission*') ? 'active' : '' }}">
                                 <a role="button" class="nav-link nav-toggle">

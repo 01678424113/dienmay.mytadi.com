@@ -1,8 +1,8 @@
 @extends('admin.layout')
 @section('style')
-    {{Html::style('assets/global/plugins/select2/css/select2.min.css')}}
-    {{Html::style('assets/global/plugins/select2/css/select2-bootstrap.min.css')}}
-    {{Html::style('assets/global/plugins/icheck/skins/all.css')}}
+    {{Html::style('cms/assets/global/plugins/select2/css/select2.min.css')}}
+    {{Html::style('cms/assets/global/plugins/select2/css/select2-bootstrap.min.css')}}
+    {{Html::style('cms/assets/global/plugins/icheck/skins/all.css')}}
 @endsection
 @section('pagecontent')
 
@@ -220,9 +220,9 @@
     </div>
 @endsection
 @section('script')
-    {{ Html::script('assets/global/plugins/icheck/icheck.min.js') }}
-    {{ Html::script('assets/global/plugins/select2/js/select2.full.min.js') }}
-    {{ Html::script('assets/global/plugins/jquery-validation/js/jquery.validate.min.js') }}
+    {{ Html::script('cms/assets/global/plugins/icheck/icheck.min.js') }}
+    {{ Html::script('cms/assets/global/plugins/select2/js/select2.full.min.js') }}
+    {{ Html::script('cms/assets/global/plugins/jquery-validation/js/jquery.validate.min.js') }}
     <script>
         $(document).ready(function () {
             $('#add-user-modal, #edit-user-modal').on('shown.bs.modal', function () {

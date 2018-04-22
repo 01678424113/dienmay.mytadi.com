@@ -135,8 +135,8 @@
     </div>
 @endsection
 @section('script')
-    {{ Html::script('assets/global/plugins/select2/js/select2.full.min.js') }}
-    {{ Html::script('assets/global/plugins/jquery-validation/js/jquery.validate.min.js') }}
+    {{ Html::script('cms/assets/global/plugins/select2/js/select2.full.min.js') }}
+    {{ Html::script('cms/assets/global/plugins/jquery-validation/js/jquery.validate.min.js') }}
     <script>
         $(document).ready(function () {
             $('#edit-function-modal').on('hidden.bs.modal', function () {

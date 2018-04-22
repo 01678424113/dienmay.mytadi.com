@@ -5,8 +5,8 @@
         max-width: 360px;
     }
 </style>
-{{ Html::style('assets/global/plugins/select2/css/select2.min.css') }}
-{{ Html::style('assets/global/plugins/select2/css/select2-bootstrap.min.css') }}
+{{ Html::style('cms/assets/global/plugins/select2/css/select2.min.css') }}
+{{ Html::style('cms/assets/global/plugins/select2/css/select2-bootstrap.min.css') }}
 @endsection
 @section('pagecontent')
 <div class="page-bar m-b-20">
@@ -166,7 +166,7 @@
 </div>
 @endsection
 @section('script')
-{{ Html::script('assets/global/plugins/select2/js/select2.full.min.js') }}
+{{ Html::script('cms/assets/global/plugins/select2/js/select2.full.min.js') }}
 <script>
     $(document).ready(function () {
         $('#filter-form').find('select').change(function () {

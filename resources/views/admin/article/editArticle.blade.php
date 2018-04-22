@@ -1,9 +1,9 @@
 @extends('admin.layout')
 @section('style')
-    {{ Html::style('assets/global/plugins/select2/css/select2.min.css') }}
-    {{ Html::style('assets/global/plugins/select2/css/select2-bootstrap.min.css') }}
-    {{ Html::style('assets/global/plugins/bootstrap-summernote/summernote.css') }}
-    {{ Html::style('assets/global/plugins/icheck/skins/all.css') }}
+    {{ Html::style('cms/assets/global/plugins/select2/css/select2.min.css') }}
+    {{ Html::style('cms/assets/global/plugins/select2/css/select2-bootstrap.min.css') }}
+    {{ Html::style('cms/assets/global/plugins/bootstrap-summernote/summernote.css') }}
+    {{ Html::style('cms/assets/global/plugins/icheck/skins/all.css') }}
 @endsection
 @section('pagecontent')
     <div class="page-bar m-b-20">
@@ -173,12 +173,12 @@
     </div>
 @endsection
 @section('script')
-    {{ Html::script('assets/global/plugins/jquery-validation/js/jquery.validate.min.js') }}
-    {{ Html::script('assets/global/plugins/jquery-validation/js/additional-methods.min.js') }}
-    {{ Html::script('assets/global/plugins/select2/js/select2.full.min.js') }}
-    {{ Html::script('assets/global/plugins/bootstrap-summernote/summernote.min.js') }}
-    {{ Html::script('assets/global/plugins/bootstrap-summernote/lang/summernote-vi-VN.min.js') }}
-    {{ Html::script('assets/global/plugins/icheck/icheck.min.js') }}
+    {{ Html::script('cms/assets/global/plugins/jquery-validation/js/jquery.validate.min.js') }}
+    {{ Html::script('cms/assets/global/plugins/jquery-validation/js/additional-methods.min.js') }}
+    {{ Html::script('cms/assets/global/plugins/select2/js/select2.full.min.js') }}
+    {{ Html::script('cms/assets/global/plugins/bootstrap-summernote/summernote.min.js') }}
+    {{ Html::script('cms/assets/global/plugins/bootstrap-summernote/lang/summernote-vi-VN.min.js') }}
+    {{ Html::script('cms/assets/global/plugins/icheck/icheck.min.js') }}
     <script>
         $(document).ready(function () {
             $('#article-form').validate({

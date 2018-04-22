@@ -1,6 +1,6 @@
 @extends('admin.layout') 
 @section('style')
-{{Html::style('assets/global/plugins/icheck/skins/all.css')}} 
+{{Html::style('cms/assets/global/plugins/icheck/skins/all.css')}}
 @endsection 
 @section('pagecontent')
 <div class="portlet light">
@@ -31,10 +31,10 @@
                         <td>{!! $category->category_meta_title !!}</td>
                         
                         <td>
-                            <button type="button" data-id="{{ $category->category_id }}" class="btn green btn-xs btn-loadcategory" disabled>
+                            <button type="button" data-id="{{ $category->category_id }}" class="btn green btn-xs btn-loadcategory" >
                                 <i class="fa fa-pencil"></i>
                             </button>
-                            <button type="button" data-id="{{ $category->category_id }}" class="btn btn-xs red-soft m-r-0 btn-delete" disabled>
+                            <button type="button" data-id="{{ $category->category_id }}" class="btn btn-xs red-soft m-r-0 btn-delete" >
                                 <i class="fa fa-trash"></i>
                             </button>
                         </td>
@@ -134,9 +134,9 @@
 </div>
 @endsection 
 @section('script') 
-{{ Html::script('assets/global/plugins/icheck/icheck.min.js') }} 
-{{Html::script('assets/global/plugins/jquery-validation/js/jquery.validate.min.js')}}
-{{Html::script('assets/global/plugins/jquery-validation/js/additional-methods.min.js')}}
+{{ Html::script('cms/assets/global/plugins/icheck/icheck.min.js') }}
+{{Html::script('cms/assets/global/plugins/jquery-validation/js/jquery.validate.min.js')}}
+{{Html::script('cms/assets/global/plugins/jquery-validation/js/additional-methods.min.js')}}
 <script>
     $(document).ready(function () {
         $('#edit-category-modal').on('hidden.bs.modal', function () {

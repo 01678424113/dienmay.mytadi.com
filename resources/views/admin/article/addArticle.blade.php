@@ -1,9 +1,9 @@
 @extends('admin.layout')
 @section('style')
-{{ Html::style('assets/global/plugins/select2/css/select2.min.css') }}
-{{ Html::style('assets/global/plugins/select2/css/select2-bootstrap.min.css') }}
-{{ Html::style('assets/global/plugins/bootstrap-summernote/summernote.css') }}
-{{ Html::style('assets/global/plugins/icheck/skins/all.css') }}
+{{ Html::style('cms/assets/global/plugins/select2/css/select2.min.css') }}
+{{ Html::style('cms/assets/global/plugins/select2/css/select2-bootstrap.min.css') }}
+{{ Html::style('cms/assets/global/plugins/bootstrap-summernote/summernote.css') }}
+{{ Html::style('cms/assets/global/plugins/icheck/skins/all.css') }}
 @endsection
 @section('pagecontent')
 <div class="page-bar m-b-20">
@@ -61,14 +61,13 @@
                         <label class="control-label">Ảnh tiêu biểu</label>
                         <div>
                             <a role="button" data-toggle="modal" data-target="#featured-modal">
-                                <img src="{{ env('APP_URL') }}images/default-image.png"
-                                     data-old="{{ env('APP_URL') }}images/default-image.png"
+                                <img src="{{ env('APP_URL') }}uploads/2018/04/22/eb4e76b0aae8cdb7ba9a3b171a2a6062.png"
+                                     data-old=""
                                      style="max-width: 100%" id="featured-img"
-                                     class="img-thumbnail"
-                                     />
+                                     class="img-thumbnail">
                             </a>
                         </div>
-                        <div id="featured-modal" class="modal fade" tabindex="-1" data-keyboard="false"style="margin-top: 5%">
+                        <div id="featured-modal" class="modal fade" tabindex="-1" data-keyboard="false" style="margin-top: 5%">
                             <div class="modal-dialog">
                                 <div class="modal-content">
                                     <div class="modal-header">
@@ -147,12 +146,12 @@
 </div>
 @endsection
 @section('script')
-{{ Html::script('assets/global/plugins/jquery-validation/js/jquery.validate.min.js') }}
-{{ Html::script('assets/global/plugins/jquery-validation/js/additional-methods.min.js') }}
-{{ Html::script('assets/global/plugins/select2/js/select2.full.min.js') }}
-{{ Html::script('assets/global/plugins/bootstrap-summernote/summernote.min.js') }}
-{{ Html::script('assets/global/plugins/bootstrap-summernote/lang/summernote-vi-VN.min.js') }}
-{{ Html::script('assets/global/plugins/icheck/icheck.min.js') }}
+{{ Html::script('cms/assets/global/plugins/jquery-validation/js/jquery.validate.min.js') }}
+{{ Html::script('cms/assets/global/plugins/jquery-validation/js/additional-methods.min.js') }}
+{{ Html::script('cms/assets/global/plugins/select2/js/select2.full.min.js') }}
+{{ Html::script('cms/assets/global/plugins/bootstrap-summernote/summernote.min.js') }}
+{{ Html::script('cms/assets/global/plugins/bootstrap-summernote/lang/summernote-vi-VN.min.js') }}
+{{ Html::script('cms/assets/global/plugins/icheck/icheck.min.js') }}
 <script>
     $(document).ready(function () {
         $('#article-form').validate({

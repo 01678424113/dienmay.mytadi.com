@@ -1,6 +1,6 @@
 @extends('admin.layout')
 @section('style')
-    {{Html::style('assets/global/plugins/icheck/skins/all.css')}}
+    {{Html::style('cms/assets/global/plugins/icheck/skins/all.css')}}
 @endsection
 @section('pagecontent')
     <div class="page-bar m-b-20">
@@ -84,9 +84,9 @@
     </div>
 @endsection
 @section('script')
-    {{ Html::script('assets/global/plugins/jquery-validation/js/jquery.validate.min.js') }}
-    {{ Html::script('assets/global/plugins/jquery-validation/js/additional-methods.min.js') }}
-    {{ Html::script('assets/global/plugins/icheck/icheck.min.js') }}
+    {{ Html::script('cms/assets/global/plugins/jquery-validation/js/jquery.validate.min.js') }}
+    {{ Html::script('cms/assets/global/plugins/jquery-validation/js/additional-methods.min.js') }}
+    {{ Html::script('cms/assets/global/plugins/icheck/icheck.min.js') }}
     <script>
         $(document).ready(function(){
             $('#group-form').find('.group-permission').find('.cb-function').on('ifClicked', function () {

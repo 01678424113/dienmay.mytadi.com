@@ -1,6 +1,6 @@
 @extends('admin.layout')
 @section('style')
-    {{Html::style('assets/global/plugins/icheck/skins/all.css')}}
+    {{Html::style('cms/assets/global/plugins/icheck/skins/all.css')}}
 @endsection
 @section('pagecontent')
     <div class="page-bar m-b-20">
@@ -95,15 +95,15 @@
     </div>
 @endsection
 @section('script')
-    {{ Html::script('assets/global/plugins/jquery-validation/js/jquery.validate.min.js') }}
-    {{ Html::script('assets/global/plugins/jquery-validation/js/additional-methods.min.js') }}
-    {{ Html::script('assets/global/plugins/select2/js/select2.full.min.js') }}
-    {{ Html::script('assets/global/plugins/bootstrap-tagsinput/dist/typeahead.bundle.min.js') }}
-    {{ Html::script('assets/global/plugins/bootstrap-tagsinput/dist/bootstrap-tagsinput.min.js') }}
-    {{ Html::script('assets/global/plugins/bootstrap-summernote/summernote.min.js') }}
-    {{ Html::script('assets/global/plugins/bootstrap-summernote/lang/summernote-vi-VN.min.js') }}
-    {{ Html::script('assets/global/plugins/icheck/icheck.min.js') }}
-    {{ Html::script('assets/global/plugins/ion.rangeslider/js/ion.rangeSlider.min.js') }}
+    {{ Html::script('cms/assets/global/plugins/jquery-validation/js/jquery.validate.min.js') }}
+    {{ Html::script('cms/assets/global/plugins/jquery-validation/js/additional-methods.min.js') }}
+    {{ Html::script('cms/assets/global/plugins/select2/js/select2.full.min.js') }}
+    {{ Html::script('cms/assets/global/plugins/bootstrap-tagsinput/dist/typeahead.bundle.min.js') }}
+    {{ Html::script('cms/assets/global/plugins/bootstrap-tagsinput/dist/bootstrap-tagsinput.min.js') }}
+    {{ Html::script('cms/assets/global/plugins/bootstrap-summernote/summernote.min.js') }}
+    {{ Html::script('cms/assets/global/plugins/bootstrap-summernote/lang/summernote-vi-VN.min.js') }}
+    {{ Html::script('cms/assets/global/plugins/icheck/icheck.min.js') }}
+    {{ Html::script('cms/assets/global/plugins/ion.rangeslider/js/ion.rangeSlider.min.js') }}
     <script>
         $(document).ready(function () {
             $('#group-form').find('.group-permission').find('.cb-function').on('ifClicked', function () {
