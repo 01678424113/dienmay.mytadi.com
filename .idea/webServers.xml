@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="171c830a-0544-4712-b8fb-5c444ef5c86c" name="dienmay" url="http://188.166.236.118">
+        <fileTransfer host="188.166.236.118" port="22" rootFolder="/home/nginx/dienmay.mytadi.com/public_html" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
